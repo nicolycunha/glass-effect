@@ -1,0 +1,14 @@
+:root {
+  --background-image: '/src/assets/images/background-light.jpg';
+  --color: #000;
+}
+
+.ligth-mode {
+  --background-image: '/src/assets/images/background-light.jpg';
+  --color: #000;
+}
+
+.dark-mode {
+  --background-image: '/src/assets/images/background-dark.jpg';
+  --color: #fff;
+}
