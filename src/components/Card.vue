@@ -39,8 +39,6 @@ export default {
     ButtonLogin,
     Field,
   },
-  props: {},
-  emits: [],
   setup(_) {
     const buttons = ref<IButton[]>([
       {
