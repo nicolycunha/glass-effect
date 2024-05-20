@@ -84,10 +84,12 @@ export default {
 
 <style scoped>
 .card {
+  margin: 48px auto;
   max-width: 500px;
   min-width: 300px;
-  height: 70vh;
+  min-height: 70vh;
   padding: 35px;
+  gap: 16px;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
@@ -96,6 +98,11 @@ export default {
   border: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(5px);
+}
+
+.header h1,
+.header p {
+  margin: 0;
 }
 
 .login-methods {

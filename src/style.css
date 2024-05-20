@@ -26,7 +26,7 @@
 body {
   color: #224;
   background: url('/src/assets/images/background-light.jpg') center / cover
-    no-repeat fixed;
+    fixed;
   margin: 0;
   display: flex;
   place-items: center;
@@ -36,7 +36,6 @@ body {
 
 #app {
   max-width: 1280px;
-  min-width: 100vw;
   min-height: 100vh;
   margin: 0 auto;
   text-align: center;
@@ -44,6 +43,30 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #b1a191;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 144, 0, 1) 0%,
+    rgba(255, 27, 107, 1) 100%
+  );
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 /* 
