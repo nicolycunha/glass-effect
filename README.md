@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="http://www.freepik.com">
+  <a href="https://glass-effect-nicolycunha.netlify.app/">
     <img src="./public/images/view.png" alt="Logo" width="300" height="200">
   </a>
 
