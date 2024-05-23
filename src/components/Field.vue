@@ -42,9 +42,9 @@ input {
   font-size: 16px;
   padding: 2px 16px;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.4);
   border: 1px solid rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(3px);
   color: #5f5f5f;
 }
 

@@ -44,12 +44,12 @@ export default {
       {
         id: uuidv4(),
         text: "Login com Google",
-        image: "/src/assets/images/google.png",
+        image: "/images/google.png",
       },
       {
         id: uuidv4(),
         text: "Login com Apple",
-        image: "/src/assets/images/apple.png",
+        image: "/images/apple.png",
       },
     ]);
 
@@ -94,7 +94,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(5px);
