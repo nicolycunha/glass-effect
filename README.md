@@ -1,9 +1,25 @@
-# Vue 3 + TypeScript + Vite
+<p align="center">
+  <a href="http://www.freepik.com">
+    <img src="./public/images/view.png" alt="Logo" width="300" height="200">
+  </a>
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+  <h3 align="center">Glass Effect</h3>
 
-## Recommended Setup
+  <p align="center">
+     Landing page com painéis de vidro em um fundo colorido.
+       <br />
+    <br />
+    <a href="https://glass-effect-nicolycunha.netlify.app/">Projeto</a>
+    ·
+    <a href="https://www.linkedin.com/in/nicoly-oliveira-da-cunha/">Contato</a>
+  </p>
+</p>
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+# Objetivo:
+Este repositório foi criado com o objetivo de estudar sobre um efeito css, chamado Glassmorphism, que consiste em criar painéis parecidos com vidro por possuirem transparência.
 
-- Use [vue-tsc](https://github.com/vuejs/language-tools/tree/master/packages/tsc) for performing the same type checking from the command line, or for generating d.ts files for SFCs.
+# Techs utilizadas: 
+VueJS<br>
+Typescript<br>
+CSS<br>
+
