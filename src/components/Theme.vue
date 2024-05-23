@@ -1,13 +1,30 @@
 <template>
   <label for="checkbox" class="switch">
     <input type="checkbox" id="checkbox" v-model="checked" />
-    <div class="slider round"></div>
+    <div class="slider round">
+      <font-awesome-icon v-if="!checked" :icon="['far', 'fa-sun']" />
+      <font-awesome-icon v-else :icon="['far', 'fa-moon']" />
+    </div>
   </label>
 </template>
 
-<script>
+<script lang="ts">
+import { ref, watch } from "vue";
+import "../styles/theme.css";
+
 export default {
   name: "Theme",
+  setup() {
+    const checked = ref<Boolean>(false);
+
+    watch(checked, async (_) => {
+      document.body.className = checked.value ? "dark-mode" : "light-mode";
+    });
+
+    return {
+      checked,
+    };
+  },
 };
 </script>
 
@@ -15,8 +32,10 @@ export default {
 .switch {
   display: incline-block;
   height: 34px;
-  position: relative;
   width: 60px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 .switch input {
@@ -59,5 +78,18 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.fa-sun {
+  margin: 6px 0 0 23px;
+}
+
+.fa-sun,
+.fa-moon {
+  font-size: 20px;
+}
+
+.fa-moon {
+  margin: 6px 23px 0 0;
 }
 </style>

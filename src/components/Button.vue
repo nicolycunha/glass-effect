@@ -32,11 +32,6 @@ export default {
   align-items: center;
   gap: 12px;
   border-radius: 8px;
-  font-family: "IBM Plex Sans", Inter, sans-serif;
-  background: rgba(255, 255, 255, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(3px);
-  color: #000000;
 }
 
 .icon {

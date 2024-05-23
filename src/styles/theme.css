@@ -1,14 +1,168 @@
 :root {
-  --background-image: '/src/assets/images/background-light.jpg';
-  --color: #000;
+  --background-image: url('/images/background-light.jpg');
+  --color: #224;
+  --card-background: rgba(255, 255, 255, 0.1);
+  --card-border: rgba(255, 255, 255, 0.5);
+  --components-background: rgba(255, 255, 255, 0.4);
+  --button-color: #000;
+  --divider-color: #000;
+  --input-color: #5f5f5f;
+  --input-placeholder: rgba(27, 27, 27, 0.3);
+  --emphasis: #ff1b6b;
+  --button-emphasis: rgb(255, 144, 0);
+  --button-linear-gradient: linear-gradient(
+    90deg,
+    rgba(255, 144, 0, 1) 0%,
+    rgba(255, 27, 107, 1) 100%
+  );
+  --thumb-linear-gradient: linear-gradient(
+    180deg,
+    rgba(255, 144, 0, 0.4) 0%,
+    rgba(255, 27, 107, 0.4) 100%
+  );
+  --thumb-linear-gradient-hover: linear-gradient(
+    180deg,
+    rgba(255, 144, 0, 0.6) 0%,
+    rgba(255, 27, 107, 0.6) 100%
+  );
+  --webkit-scrollbar-track: #b1a191;
 }
 
 .ligth-mode {
-  --background-image: '/src/assets/images/background-light.jpg';
-  --color: #000;
+  --background-image: url('/images/background-light.jpg');
+  --color: #224;
+  --card-background: rgba(255, 255, 255, 0.1);
+  --card-border: rgba(255, 255, 255, 0.5);
+  --components-background: rgba(255, 255, 255, 0.4);
+  --button-color: #000;
+  --divider-color: #000;
+  --input-color: #5f5f5f;
+  --input-placeholder: rgba(27, 27, 27, 0.3);
+  --emphasis: #ff1b6b;
+  --button-emphasis: rgb(255, 144, 0);
+  --button-linear-gradient: linear-gradient(
+    90deg,
+    rgba(255, 144, 0, 1) 0%,
+    rgba(255, 27, 107, 1) 100%
+  );
+  --thumb-linear-gradient: linear-gradient(
+    180deg,
+    rgba(255, 144, 0, 0.4) 0%,
+    rgba(255, 27, 107, 0.4) 100%
+  );
+  --thumb-linear-gradient-hover: linear-gradient(
+    180deg,
+    rgba(255, 144, 0, 0.6) 0%,
+    rgba(255, 27, 107, 0.6) 100%
+  );
+  --webkit-scrollbar-track: #b1a191;
 }
 
 .dark-mode {
-  --background-image: '/src/assets/images/background-dark.jpg';
-  --color: #fff;
+  --background-image: url('/images/background-dark.jpg');
+  --color: #dcdcdc;
+  --card-background: rgba(0, 0, 0, 0.1);
+  --card-border: rgba(255, 255, 255, 0.2);
+  --components-background: rgba(255, 255, 255, 0.2);
+  --button-color: #d4d4d4;
+  --divider-color: #5c5c5c;
+  --input-color: #bfbfbf;
+  --input-placeholder: #9c9a9a;
+  --emphasis: #ab43ff;
+  --button-emphasis: rgba(5, 7, 38, 1);
+  --button-linear-gradient: linear-gradient(
+    90deg,
+    rgba(5, 7, 38, 1) 0%,
+    rgba(80, 34, 136, 1) 70%,
+    rgba(171, 67, 255, 1) 100%
+  );
+  --thumb-linear-gradient: linear-gradient(
+    180deg,
+    rgba(5, 7, 38, 0.4) 0%,
+    rgba(80, 34, 136, 0.4) 70%,
+    rgba(171, 67, 255, 0.4) 100%
+  );
+  --thumb-linear-gradient-hover: linear-gradient(
+    180deg,
+    rgba(5, 7, 38, 0.8) 0%,
+    rgba(80, 34, 136, 0.8) 70%,
+    rgba(171, 67, 255, 0.8) 100%
+  );
+  --webkit-scrollbar-track: #1b1c20;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--webkit-scrollbar-track);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--thumb-linear-gradient);
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--thumb-linear-gradient-hover);
+}
+
+body {
+  color: var(--color);
+  background: var(--background-image) center / cover fixed;
+}
+
+.card {
+  background: var(--card-background);
+  border: 1px solid var(--card-border);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5px);
+}
+
+.button {
+  background: var(--components-background);
+  border: 1px solid var(--components-background);
+  backdrop-filter: blur(3px);
+  color: var(--button-color);
+}
+
+.divider::after,
+.divider::before {
+  background-color: var(--divider-color);
+}
+
+label {
+  color: var(--color);
+}
+
+input {
+  background: var(--components-background);
+  border: 1px solid var(--components-background);
+  backdrop-filter: blur(3px);
+  color: var(--input-color);
+}
+
+input:active,
+input:focus-visible {
+  border: 1px solid var(--components-background);
+}
+
+input::placeholder {
+  color: var(--input-placeholder);
+}
+
+.emphasis {
+  color: var(--emphasis);
+}
+
+.button-emphasis {
+  background: var(--button-emphasis);
+  background: var(--button-linear-gradient);
+  border: 1px solid var(--components-background);
+  backdrop-filter: blur(5px);
+  color: #fff;
 }
